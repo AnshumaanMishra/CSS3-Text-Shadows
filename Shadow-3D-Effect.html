@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: #ccc; /* Just for better visibility*/
+        }
+        .shadow-3d-effect{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 5rem;
+            text-transform: uppercase;
+            color: #f2395a;
+
+            /*Italic Effect*/
+            --webkit-transform: skew(-5deg, -5deg) rotate(5deg);
+            transform: skew(-5deg, -5deg) rotate(5deg);
+            --webkit-transform-origin: center center;
+            transform-origin: center center;
+
+            /*3D effect starts here*/
+            text-shadow: 
+                        /*Main 3D layers*/
+                        1px 1px #d10e31, 
+                        2px 2px #d10e31,
+                        3px 3px #d10e31,
+                        4px 4px #d10e31, 
+                        5px 5px #d10e31,
+                        6px 6px #d10e31,
+                        7px 7px #d10e31,
+                        /*Darker optional layers*/
+                        8px 8px #890920, 
+                        9px 9px #890920,
+                        10px 10px #890920,
+                        /*Blur effect layer*/
+                        11px 11px 15px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <section>
+
+        <h4 class="shadow-3d-effect">Shadow that creates a 3d effect</h4>
+
+    </section>
+</body>
+</html>
